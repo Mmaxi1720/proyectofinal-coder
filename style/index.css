@@ -77,19 +77,12 @@
 }
 .main__image{
     margin: 40px 0;
-}
-
-.title__video{
-    font-size: 16px;
-    margin: 0 0;
-}
-@media(min-width:577px){
-    .main__video{
-        height: 450px;
-        width: 800px;
-        
-    }
-}
+}/* 
+.main__video{
+    margin: 0 auto;
+    height: 400px;
+    width: 100%;
+} */
 .footer{
     background-image: linear-gradient(to left bottom, #0d2547, #173c67, #1f558a, #236fad, #228bd2);
     color: white;
