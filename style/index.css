@@ -77,16 +77,15 @@
 }
 .main__image{
     margin: 40px 0;
-}/* 
-.main__video{
-    margin: 0 auto;
-    height: 400px;
-    width: 100%;
-} */
+}
+.video_text{
+    font-size: 16px;
+    margin: 0 20px;
+}
 .footer{
     background-image: linear-gradient(to left bottom, #0d2547, #173c67, #1f558a, #236fad, #228bd2);
     color: white;
-    height: 65px;
+    height: 70px;
 }
 .footer__red{
     display: flex;
@@ -103,6 +102,9 @@
     justify-content: flex-end;
     font-size: 10px;
     margin: 10px;
+    position: relative;
+    bottom: 15px;
+    right: 20px;
 }
 .main__form{
     display: flex;
@@ -119,6 +121,7 @@
 }
 .form__area{
     height: 250px;
+    font-size: 30px;
 }
 .form__input{
     font-size: 30px;
@@ -143,7 +146,6 @@
         font-size: 30px;
     }
 }
-
 .contact__title{
     text-align: center;
     font-size: 60px;
@@ -158,6 +160,7 @@
     .main__about{
         display: flex;
         flex-direction: row;
+        height: 500px;
     }
 }
 
@@ -166,6 +169,7 @@
     width: 300px;
     margin: 0 auto;
 }
+
 .about__img{
     height: 300px;
     width: 500px;
