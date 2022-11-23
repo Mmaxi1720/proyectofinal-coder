@@ -126,11 +126,6 @@
 .form__input{
     font-size: 30px;
 }
-
-.btn{
-    font-size: 30px;
-    padding: 10px 20px;
-}
 @media (min-width:1200px){
     .main__form{
         margin: 0 auto;
@@ -145,7 +140,7 @@
         font-size: 30px;
     }
     .form__area{
-        height: 250px;
+        height: 350px;
     }
     .form__input{
         font-size: 30px;
@@ -173,24 +168,16 @@
     height: 300px;
     width: 300px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .about__img{
     height: 300px;
-    width: 100%;
-}
-@media(min-width:992px){
-    .about__img{
-        height: 400px;
-        width: 500px;
-}
+    width: 500px;
 }
 .about__subtitle{
     font-size: 20px;
     margin: 20px;
     text-align: center;
-    width: 100%;
 }
 .tech__title{
     margin-top:40px ;
