@@ -157,6 +157,14 @@
     margin: 36px;
     font-family: 'Roboto Condensed', sans-serif;
 }
+@media (min-width:360px){
+    .contact__title{
+        text-align: center;
+        font-size: 60px;
+        margin: 20px auto;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+}
 .main__about{
     display: flex;
     flex-direction: column;
@@ -174,11 +182,13 @@
     width: 300px;
     margin: 0 auto;
     text-align: center;
+    font-size: 24px;
 }
 
 .about__img{
     height: 300px;
     width: 100%;
+    object-fit: cover;
 }
 @media(min-width:992px){
     .about__img{
@@ -188,8 +198,9 @@
 }
 .about__subtitle{
     font-size: 20px;
-    margin: 20px;
+    margin: 10px auto;;
     text-align: center;
+    align-items: center;;
     width: 100%;
 }
 .tech__title{
@@ -214,3 +225,13 @@
     height: 100px;
     width: 100px;
 }
+
+@media
+  (max-width:450px){
+   .tech__img{
+    margin: 20px auto;
+      height: 70px;
+      width: 70px;
+      
+   }
+   }
