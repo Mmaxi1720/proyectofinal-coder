@@ -156,6 +156,8 @@ $colorWeb: #173c67;
   margin: 0 auto;
   height: 820px;
   gap: 20px;
+  border: solid 10px $colorWeb;
+  border-radius: 30px;
   }
   .main__form__input {
     font-size: 30px;
@@ -174,6 +176,7 @@ $colorWeb: #173c67;
   .btn {
     font-size: 30px;
     padding: 10px 20px;
+    background-color: $colorWeb;
   }
 
 @media (min-width: 1200px) {
@@ -181,6 +184,7 @@ $colorWeb: #173c67;
     margin: 0 auto;
     height: 780px;
     width: 50%;
+    
   } 
   .main__form__input {
     font-size: 30px;
@@ -202,12 +206,15 @@ $colorWeb: #173c67;
   margin: 36px;
   font-family: $font-familyVar;
 }
-@media (min-width: 360px) {
+@media (max-width: 400px) {
   .contact__title {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     margin: 20px auto;
     font-family: $font-familyVar
+  }
+  .main__form{
+    border: none
   }
 }
 

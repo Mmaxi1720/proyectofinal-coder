@@ -101,7 +101,9 @@
   flex-direction: column;
   margin: 0 auto;
   height: 820px;
-  gap: 20px; }
+  gap: 20px;
+  border: solid 10px #173c67;
+  border-radius: 30px; }
 
 .main__form__input {
   font-size: 30px; }
@@ -118,7 +120,8 @@
 
 .btn {
   font-size: 30px;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  background-color: #173c67; }
 
 @media (min-width: 1200px) {
   .main__form {
@@ -140,12 +143,14 @@
   margin: 36px;
   font-family: "Roboto Condensed", sans-serif; }
 
-@media (min-width: 360px) {
+@media (max-width: 400px) {
   .contact__title {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     margin: 20px auto;
-    font-family: "Roboto Condensed", sans-serif; } }
+    font-family: "Roboto Condensed", sans-serif; }
+  .main__form {
+    border: none; } }
 
 .main__about {
   display: flex;
