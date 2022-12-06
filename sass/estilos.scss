@@ -1,3 +1,17 @@
+///VARIABLES///
+///VARIABLES///
+$font-familyVar: "Roboto Condensed", sans-serif;
+$colorWeb: #173c67;
+
+
+/// MIXIN///
+/// MIXIN///
+/// MIXIN///
+@mixin flexbox-direction {
+  display: flex;
+  flex-direction: column;
+}
+
 
 // ESTILOS de HEADER y FOOTER///
 // ESTILOS de HEADER y FOOTER///
@@ -56,14 +70,14 @@
   text-align: center;
   font-size: 40px;
   margin: 36px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: $font-familyVar
 }
 @media (min-width: 1500px) {
   .title {
     text-align: center;
     font-size: 65px;
     margin: 40px;
-    font-family: "Roboto Condensed", sans-serif;
+    
   }
 }
 
@@ -109,7 +123,7 @@
     font-size: 26px;
     text-align: center;
     margin: 40px 0;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: $font-familyVar;
 
     @media (min-width: 2500px) {
       .main__text {
@@ -138,8 +152,7 @@
 //CONTACT PAGE///
 
 .main__form {
-  display: flex;
-  flex-direction: column;
+  @include flexbox-direction;
   margin: 0 auto;
   height: 820px;
   gap: 20px;
@@ -187,14 +200,14 @@
   text-align: center;
   font-size: 60px;
   margin: 36px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: $font-familyVar;
 }
 @media (min-width: 360px) {
   .contact__title {
     text-align: center;
     font-size: 60px;
     margin: 20px auto;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: $font-familyVar
   }
 }
 
@@ -202,8 +215,7 @@
 //ABOUTME PAGE///
 
 .main__about {
-  display: flex;
-  flex-direction: column;
+  @include flexbox-direction;
   .aboutme {
     height: 300px;
     width: 300px;
@@ -277,7 +289,6 @@
 }
 
 
-
 /// MY WORK PAGE///
 /// MY WORK PAGE///
 /// MY WORK PAGE///
@@ -285,11 +296,10 @@
 .mywork{
   height: auto;
   width: auto;
-  display: flex;
-  flex-direction: column;
+  @include flexbox-direction;
   margin: 20px;
   .aboutme__text{
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: $font-familyVar;
     font-size: 28px;
     text-align: center;
     height: auto;
@@ -331,7 +341,7 @@
   margin: 0;
     }
 .carousel-control-prev,.carousel-control-next{
-  background:#173c67
+  background: #173c67
 }
 }
 
@@ -349,13 +359,13 @@
     height: 100%;
     width: 100%;
         .card-body{
-      font-family: "Roboto Condensed", sans-serif;
+      font-family: $font-familyVar;
       height: auto;
       width: auto;
     }
     .btn{
       font-size: 26px;
-      background-color: #173c67;
+      background-color: $colorWeb
     }
     .card-img-top{
       height: auto; 
@@ -376,15 +386,14 @@
 ///SERVICIOS PAGE///
 ///SERVICIOS PAGE///
 .main__services{
-  display: flex;
-  flex-direction: column;
+  @include flexbox-direction;
   margin: 40px;
   gap: 100px;
   
   .services__text{
     font-size: 24px;
     color: #173c67;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: $font-familyVar;
     border: #0d2547 5px solid;
     border-radius: 20px;
     padding: 20px;
