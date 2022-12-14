@@ -16,6 +16,7 @@ $colorWeb: #173c67;
 // ESTILOS de HEADER y FOOTER///
 // ESTILOS de HEADER y FOOTER///
 // ESTILOS de HEADER y FOOTER///
+
 .header {
   background-image: linear-gradient(
     to left bottom,
@@ -399,9 +400,10 @@ $colorWeb: #173c67;
   
   .services__text{
     font-size: 24px;
-    color: #173c67;
+    background-color: $colorWeb;
+    color:white;
     font-family: $font-familyVar;
-    border: #0d2547 5px solid;
+    border: #194f9b 5px solid;
     border-radius: 20px;
     padding: 20px;
     text-align: center;

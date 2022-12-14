@@ -293,9 +293,10 @@
   gap: 100px; }
   .main__services .services__text {
     font-size: 24px;
-    color: #173c67;
+    background-color: #173c67;
+    color: white;
     font-family: "Roboto Condensed", sans-serif;
-    border: #0d2547 5px solid;
+    border: #194f9b 5px solid;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
