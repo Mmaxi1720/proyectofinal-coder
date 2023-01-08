@@ -83,6 +83,7 @@
     @media (min-width: 2500px) {
       .main__section .main__text .main__text {
         display: flex;
+        justify-content: space-between;
         font-size: 36px;
         text-align: center;
         margin: 40px 0;
@@ -121,7 +122,14 @@
 .btn {
   font-size: 30px;
   padding: 10px 20px;
-  background-color: #173c67; }
+  background-color: #173c67;
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .5s; }
+  .btn .btn:hover {
+    color: #194f9b; }
 
 @media (min-width: 1200px) {
   .main__form {
@@ -235,9 +243,10 @@
     border: solid #173c67;
     margin: 0 auto; }
   .mywork .carousel__img {
-    height: 300px;
+    height: 100%;
     width: 300px;
-    margin: 80px; }
+    margin: 80px;
+    object-fit: cover; }
   @media (max-width: 600px) {
     .mywork .aboutme__text {
       font-size: 18px;
@@ -249,9 +258,10 @@
       height: 300px;
       width: 100%; }
     .mywork .carousel__img {
-      height: 250px;
+      height: 100%;
       width: 250px;
-      margin: 10px; } }
+      margin: 10px auto;
+      object-fit: cover; } }
   .mywork .carousel__text {
     text-align: center;
     background: #173c67;
@@ -289,28 +299,34 @@
 .main__services {
   display: flex;
   flex-direction: column;
-  margin: 40px;
   gap: 100px; }
-  .main__services .services__text {
-    font-size: 24px;
+  .main__services .card {
+    font-size: 32px;
     background-color: #173c67;
     color: white;
     font-family: "Roboto Condensed", sans-serif;
     border: #194f9b 5px solid;
     border-radius: 20px;
-    padding: 20px;
     text-align: center;
-    padding: 20px; }
+    padding: 20px;
+    height: 300px; }
+  @media (max-width: 992px) {
+    .main__services .card {
+      font-size: 20px; } }
 
-@media (min-width: 992px) {
-  .main__services {
-    flex-direction: row; } }
+.error__div {
+  height: 100%;
+  width: 100%;
+  background-color: #6ba9d2; }
 
-.services__otro {
-  height: 20px;
-  width: 100%; }
+.error__img {
+  margin: 0 0;
+  width: 100%;
+  height: 1000px; }
 
-@media (min-width: 992px) {
-  .services__otro {
-    height: 702px;
-    width: 100%; } }
+.error__button {
+  margin: 10px auto;
+  background-color: #173c67;
+  color: white;
+  display: block;
+  height: 100px; }

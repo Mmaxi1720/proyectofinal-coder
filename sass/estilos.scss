@@ -129,12 +129,14 @@ $colorWeb: #173c67;
     @media (min-width: 2500px) {
       .main__text {
         display: flex;
+        justify-content: space-between;
         font-size: 36px;
         text-align: center;
         margin: 40px 0;
         align-items: center;
       }
     }
+    
   }
   .main__image {
     margin: 40px 0;
@@ -178,6 +180,15 @@ $colorWeb: #173c67;
     font-size: 30px;
     padding: 10px 20px;
     background-color: $colorWeb;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    .btn:hover{
+    color:#194f9b;
+    }
+
   }
 
 @media (min-width: 1200px) {
@@ -313,15 +324,19 @@ $colorWeb: #173c67;
     height: auto;
     width: 50%;
     margin: 150px auto;
-}
+  }
+ 
 .carousel{
   border: solid #173c67;
   margin: 0 auto;
+ 
 }
 .carousel__img{
-  height: 300px;
+  height: 100%;
   width: 300px;
   margin: 80px;
+  object-fit: cover;
+  
 }
 
 @media(max-width:600px){
@@ -335,11 +350,13 @@ $colorWeb: #173c67;
     margin: 20px auto;;
     height: 300px;
     width: 100%;
+    
   }
   .carousel__img{
-    height: 250px;
+    height: 100%;
     width: 250px;
-    margin: 10px;
+    margin: 10px auto;
+    object-fit: cover;    
    }
   }
 .carousel__text{
@@ -395,37 +412,50 @@ $colorWeb: #173c67;
 ///SERVICIOS PAGE///
 .main__services{
   @include flexbox-direction;
-  margin: 40px;
+  
   gap: 100px;
+   
+.card{
+  font-size: 32px;
+  background-color: #173c67;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  border: #194f9b 5px solid;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  height: 300px;
+}
   
-  .services__text{
-    font-size: 24px;
-    background-color: $colorWeb;
-    color:white;
-    font-family: $font-familyVar;
-    border: #194f9b 5px solid;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    padding: 20px;
+ 
+   @media (max-width:992px) {
+     .card{
+      font-size: 20px;
+    
   }
+  }
+ 
 }
 
 
-@media (min-width:992px) {
-  .main__services{
-  flex-direction: row;
-  }
-  
-}
-.services__otro{
-  height: 20px;
+
+
+
+/// ERROR PAGE///
+.error__div{
+  height: 100%;
   width: 100%;
-  
+  background-color: #6ba9d2;
 }
-@media (min-width:992px) {
-  .services__otro{
-    height: 702px;
-    width: 100%;
-  }
+.error__img{
+  margin: 0 0;
+  width: 100%;
+  height: 1000px;
+}
+.error__button{
+  margin: 10px auto;
+  background-color: #173c67;
+  color: white;
+  display: block;
+  height: 100px;
 }
